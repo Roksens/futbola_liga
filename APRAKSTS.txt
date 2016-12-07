@@ -1,31 +1,31 @@
-Futbola lîgas pârvaldîbas aplikâcija
-Veidoja: Mârtiòğ Bûda, Latvijas Universitâtes, Datorikas fakultâtes, 2. kursa students.
+ï»¿Futbola lÄ«gas pÄrvaldÄ«bas aplikÄcija
+Veidoja: MÄrtiÅ†Å¡ BÅ«da, Latvijas UniversitÄtes, Datorikas fakultÄtes, 2. kursa students.
 
-Tas ko izdarîju:
-*Izveidoju autorizâcijas formu;
-*Izveidoju datubâzi ar nepiecieğamajâm tabulâm;
-*Izveidoju iespçju apskatît datubâzç esoğos datus (Spçlçtâji, treneri, komandas) un attiecîgi arî to datus, atrodas resources/views mapç ar nosaukumiem - players.blade, trainers.blade, teams.blade un results.blade;
-*Izveidoju datu rediìçğanas, papildinâğanas un dzçğanas iespçjas, kuras ir iespçjams palaist atverot konkrçto failu (atrodas resources/views ar nosaukumiem speletaji-index, treneri-index, komanda-index, rezultati-index (kur attiecîgi katram "nosaukums-"edit, select, delete, update ir ar datubâzi saistîti faili, lai veiktu darbîbu un ir piesaistîti index daïai);
-*Datu atjaunoğanai, pievienoğanai un dzçğanai izmantoju live-update metodi ar Ajax Jquery, taèu radâs problçmas ar publiskoğanu, kur arî beigu beigâs nevarçju izdomât risinâjumu;
-*u.c. detaïas
+Tas ko izdarÄ«ju:
+*Izveidoju autorizÄcijas formu;
+*Izveidoju datubÄzi ar nepiecieÅ¡amajÄm tabulÄm;
+*Izveidoju iespÄ“ju apskatÄ«t datubÄzÄ“ esoÅ¡os datus (SpÄ“lÄ“tÄji, treneri, komandas) un attiecÄ«gi arÄ« to datus, atrodas resources/views mapÄ“ ar nosaukumiem - players.blade, trainers.blade, teams.blade un results.blade;
+*Izveidoju datu rediÄ£Ä“Å¡anas, papildinÄÅ¡anas un dzÄ“Å¡anas iespÄ“jas, kuras ir iespÄ“jams palaist atverot konkrÄ“to failu (atrodas resources/views ar nosaukumiem speletaji-index, treneri-index, komanda-index, rezultati-index (kur attiecÄ«gi katram "nosaukums-"edit, select, delete, update ir ar datubÄzi saistÄ«ti faili, lai veiktu darbÄ«bu un ir piesaistÄ«ti index daÄ¼ai);
+*Datu atjaunoÅ¡anai, pievienoÅ¡anai un dzÄ“Å¡anai izmantoju live-update metodi ar Ajax Jquery, taÄu radÄs problÄ“mas ar publiskoÅ¡anu, kur arÄ« beigu beigÄs nevarÄ“ju izdomÄt risinÄjumu;
+*u.c. detaÄ¼as
 
-Kas nesanâca, taèu bûtu varçts izdarît:
-*Gribçju izveidot datu attçloğanu "dropdown" veidâ, lai, piemçram, norâdot spçlçtâja komandu, bûtu çrtâk izvçlçties esoğâs komandas;
-*Kâ jau iepriekğ minçju, Ajax Jquery attçloğana publiskajâ daïâ. Ğie faili strâdâ kâ nâkas, ja tos atver ar lokâlâ hosta failu pârskatîğanas rîku, tad atverot attiecîgâs datu kopas index failu, ir iespçja gan rediìçt, gan pievienot gan dzçst datu bâzes ierakstus.
-*Publiskâs daïas navigâciju pa sadaïâm, çrtâkai lietoğanai.
+Kas nesanÄca, taÄu bÅ«tu varÄ“ts izdarÄ«t:
+*GribÄ“ju izveidot datu attÄ“loÅ¡anu "dropdown" veidÄ, lai, piemÄ“ram, norÄdot spÄ“lÄ“tÄja komandu, bÅ«tu Ä“rtÄk izvÄ“lÄ“ties esoÅ¡Äs komandas;
+*KÄ jau iepriekÅ¡ minÄ“ju, Ajax Jquery attÄ“loÅ¡ana publiskajÄ daÄ¼Ä. Å ie faili strÄdÄ kÄ nÄkas, ja tos atver ar lokÄlÄ hosta failu pÄrskatÄ«Å¡anas rÄ«ku, tad atverot attiecÄ«gÄs datu kopas index failu, ir iespÄ“ja gan rediÄ£Ä“t, gan pievienot gan dzÄ“st datu bÄzes ierakstus.
+*PubliskÄs daÄ¼as navigÄciju pa sadaÄ¼Äm, Ä“rtÄkai lietoÅ¡anai.
 
-Formas/funkcijas, kas pieejamas publiskajâ daïâ:
-pçc domçna(man bija localhost:8000)
-/login - pieteikğanâs sistçmai;
-/register - pierakstîğanâs sistçmai;
-/teams - visu komandu ieraksti datubâzç (nosaukums, atrağanâs vieta, dibinâğanas datums, apraksts);
-/players - visu spçlçtâju ieraksti datubâzç (vârds, uzvârds, personas kods, komanda kurâ spçlç, vecums, augums, svars);
-/trainers - visu treneru ieraksti datubâzç (vârds, uzvârds, personas kods, komanda kuru trennç, vecums, augums, svars);
-/results - visi rezultâtu ieraksti datubâzç (komanda A, komandas A rezultâts, komanda B, komandas B rezultâts).
+Formas/funkcijas, kas pieejamas publiskajÄ daÄ¼Ä:
+pÄ“c domÄ“na(man bija localhost:8000)
+/login - pieteikÅ¡anÄs sistÄ“mai;
+/register - pierakstÄ«Å¡anÄs sistÄ“mai;
+/teams - visu komandu ieraksti datubÄzÄ“ (nosaukums, atraÅ¡anÄs vieta, dibinÄÅ¡anas datums, apraksts);
+/players - visu spÄ“lÄ“tÄju ieraksti datubÄzÄ“ (vÄrds, uzvÄrds, personas kods, komanda kurÄ spÄ“lÄ“, vecums, augums, svars);
+/trainers - visu treneru ieraksti datubÄzÄ“ (vÄrds, uzvÄrds, personas kods, komanda kuru trennÄ“, vecums, augums, svars);
+/results - visi rezultÄtu ieraksti datubÄzÄ“ (komanda A, komandas A rezultÄts, komanda B, komandas B rezultÄts).
 
-Formas/funkcijas, kas nav pieejamas publiski, taèu ir direktorijas saturâ
-pçc domçna (man bija localhost/furbola-liga)
-/resources/views/komanda-index.php - iespçja pârskatît, labot, dzçst un ievietot komandas saturu datubâzç;
-/resources/views/speletaji-index.php - iespçja pârskatît, labot, dzçst un ievietot spçlçtâju saturu datubâzç;
-/resources/views/treneri-index.php - iespçja pârskatît, labot, dzçst un ievietot treneru saturu datubâzç;
-/resources/views/rezultati-index.php - iespçja pievienot jaunu rezultâtu starp divâm komandâm.
+Formas/funkcijas, kas nav pieejamas publiski, taÄu ir direktorijas saturÄ
+pÄ“c domÄ“na (man bija localhost/furbola-liga)
+/resources/views/komanda-index.php - iespÄ“ja pÄrskatÄ«t, labot, dzÄ“st un ievietot komandas saturu datubÄzÄ“;
+/resources/views/speletaji-index.php - iespÄ“ja pÄrskatÄ«t, labot, dzÄ“st un ievietot spÄ“lÄ“tÄju saturu datubÄzÄ“;
+/resources/views/treneri-index.php - iespÄ“ja pÄrskatÄ«t, labot, dzÄ“st un ievietot treneru saturu datubÄzÄ“;
+/resources/views/rezultati-index.php - iespÄ“ja pievienot jaunu rezultÄtu starp divÄm komandÄm.
