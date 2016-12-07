@@ -1,0 +1,31 @@
+Futbola lîgas pârvaldîbas aplikâcija
+Veidoja: Mârtiòð Bûda, Latvijas Universitâtes, Datorikas fakultâtes, 2. kursa students.
+
+Tas ko izdarîju:
+*Izveidoju autorizâcijas formu;
+*Izveidoju datubâzi ar nepiecieðamajâm tabulâm;
+*Izveidoju iespçju apskatît datubâzç esoðos datus (Spçlçtâji, treneri, komandas) un attiecîgi arî to datus, atrodas resources/views mapç ar nosaukumiem - players.blade, trainers.blade, teams.blade un results.blade;
+*Izveidoju datu rediìçðanas, papildinâðanas un dzçðanas iespçjas, kuras ir iespçjams palaist atverot konkrçto failu (atrodas resources/views ar nosaukumiem speletaji-index, treneri-index, komanda-index, rezultati-index (kur attiecîgi katram "nosaukums-"edit, select, delete, update ir ar datubâzi saistîti faili, lai veiktu darbîbu un ir piesaistîti index daïai);
+*Datu atjaunoðanai, pievienoðanai un dzçðanai izmantoju live-update metodi ar Ajax Jquery, taèu radâs problçmas ar publiskoðanu, kur arî beigu beigâs nevarçju izdomât risinâjumu;
+*u.c. detaïas
+
+Kas nesanâca, taèu bûtu varçts izdarît:
+*Gribçju izveidot datu attçloðanu "dropdown" veidâ, lai, piemçram, norâdot spçlçtâja komandu, bûtu çrtâk izvçlçties esoðâs komandas;
+*Kâ jau iepriekð minçju, Ajax Jquery attçloðana publiskajâ daïâ. Ðie faili strâdâ kâ nâkas, ja tos atver ar lokâlâ hosta failu pârskatîðanas rîku, tad atverot attiecîgâs datu kopas index failu, ir iespçja gan rediìçt, gan pievienot gan dzçst datu bâzes ierakstus.
+*Publiskâs daïas navigâciju pa sadaïâm, çrtâkai lietoðanai.
+
+Formas/funkcijas, kas pieejamas publiskajâ daïâ:
+pçc domçna(man bija localhost:8000)
+/login - pieteikðanâs sistçmai;
+/register - pierakstîðanâs sistçmai;
+/teams - visu komandu ieraksti datubâzç (nosaukums, atraðanâs vieta, dibinâðanas datums, apraksts);
+/players - visu spçlçtâju ieraksti datubâzç (vârds, uzvârds, personas kods, komanda kurâ spçlç, vecums, augums, svars);
+/trainers - visu treneru ieraksti datubâzç (vârds, uzvârds, personas kods, komanda kuru trennç, vecums, augums, svars);
+/results - visi rezultâtu ieraksti datubâzç (komanda A, komandas A rezultâts, komanda B, komandas B rezultâts).
+
+Formas/funkcijas, kas nav pieejamas publiski, taèu ir direktorijas saturâ
+pçc domçna (man bija localhost/furbola-liga)
+/resources/views/komanda-index.php - iespçja pârskatît, labot, dzçst un ievietot komandas saturu datubâzç;
+/resources/views/speletaji-index.php - iespçja pârskatît, labot, dzçst un ievietot spçlçtâju saturu datubâzç;
+/resources/views/treneri-index.php - iespçja pârskatît, labot, dzçst un ievietot treneru saturu datubâzç;
+/resources/views/rezultati-index.php - iespçja pievienot jaunu rezultâtu starp divâm komandâm.
